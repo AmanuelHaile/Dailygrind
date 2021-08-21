@@ -9,7 +9,7 @@
 	<link id="mainStylesheet" rel="stylesheet" href="css/default.css" />
     <style type="text/css">
 	
-        html {background-color:#FF7518;/* pumpkin - overwrites default */}
+        html {background-color:wheat;/* pumpkin - overwrites default */}
         
         .feature {color:#FF7518; /* daily feature color - pumpkin! */}
         
@@ -45,93 +45,183 @@
 </head>
 <body>
 	<header>
-	    <img src="images/largebucks-logo.jpg" alt="You drink our coffee, we make large bucks!" class="flexible" id="logo" />
+	    <img src="largebucks-coffee-10072015/images/largebucks-logo.jpg" alt="You drink our coffee, we make large bucks!" class="flexible" id="logo" />
 		<h1 class="masthead">LARGEBUCK$ COFFEE</h1>
 		<nav>
+            <h3> Check out our reccomended recipes to make delicous coffee at home!</h3>
 			<ul>
-				<li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
+				<li><a style="color: inherit" href="https://thewoksoflife.com/bubble-tea/">Boba</a></li>
+                <li><a style="color: inherit" href="https://www.allrecipes.com/recipe/235850/starbucks-caramel-frappuccino-copycat-recipe/">Frappuccino</a></li>
+                <li><a style="color: inherit" href="https://cooking.nytimes.com/recipes/1017355-cold-brewed-iced-coffee">Cold Brew</a></li>
+                <li><a style="color: inherit" href="https://www.inspiredtaste.net/8419/pumpkin-spice-latte-at-home-recipe/">Pumpkin Spice Latte</a></li>
+                <li><a style="color: inherit"  href="https://www.allrecipes.com/recipe/23538/mocha-coffee/">Mocha</a></li>
 			</ul>
 		</nav>
 	</header>
     <main>
 		 <header><h3 class="slogan">You drink our coffee, we make large bucks!</h3></header>
-        <p>
+		 <h3>A JavaScript Example by Amanuel Haile</h3>
+       <!--<p>
     		 <img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
-            <strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>
-        <p><span class="feature">Pumpkin Spice is </span> Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical.</p>
-        <p><span class="feature">Enjoy Pumpkin Spice with our </span> Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin.</p>
-		 <p>
-		 <b>At LargeBuck$ we aspire to: </b>Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
+            <strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>-->
+		<div id="mydiv"></div>
+		<p>This example uses HTML/CSS & JavaScript to create a single page that rotates unique colors and content for each weekday (Sunday to Saturday) into the page. Content includes:</p>
+		<p>
+			<ul>
+				<li>The name of the coffee</li>
+				<li>A picture of the coffee, including the alt attribute</li>
+				<li>A color associated with the coffee</li>
+				<li>A description of the coffee</li>
+			</ul>
+		</p>
 
-		 </p>
-		<p>
-		Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life, tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
-		</p>
-		<p>
-		Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel put a bird on it master cleanse.
-		</p>
-		<p>
-		Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
-		</p>
+		<h3>Click below to view coffee specials for other days of the week</h3>
+		<p><a style="color: inherit" href="?day=0">Sunday</a></p>
+		<p><a style="color: inherit" href="?day=1">Monday</a></p>
+		<p><a style="color: inherit" href="?day=2">Tuesday</a></p>
+		<p><a style="color: inherit" href="?day=3">Wednesday</a></p>
+		<p><a style="color: inherit" href="?day=4">Thursday</a></p>
+		<p><a style="color: inherit" href="?day=5">Friday</a></p>
+		<p><a style="color: inherit" href="?day=6">Saturday</a></p>
+
+
+
+
+
+
+
      </main>
     <footer>
       <small>&copy; 2014-2015, All Rights Reserved ~
-      <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
-      <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+      <a style="color: inherit" href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
+      <a style="color: inherit" href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
       </small>
     </footer>
     <!-- END Footer -->
-	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	$("document").ready(function(){
-		$('.seasons a').click(function(e){//find all a tags inside class of seasons
-            e.preventDefault();//stop default submission
-			var season = $(this).attr("href");//contents of href attribute of this element
-			var stylesheet = $('#mainStylesheet');
-			season = season.toLowerCase();
-			switch(season)
-			{
-				case 'spring':
-				$('#logo').attr("src","images/spring.gif");
-				$('#wear').attr("src","images/spring-wear.jpg");
-				$('main header h3').html("Get a jump on Spring wear!");
-				break;
-				
-				case 'summer':
-				$('#logo').attr("src","images/summer.gif");
-				$('#wear').attr("src","images/summer-wear.jpg");
-				$('main header h3').html("Make Summer a hummer!");
-				break;
-				
-				case 'fall':
-				$('#logo').attr("src","images/fall.gif");
-				$('#wear').attr("src","images/fall-wear.jpg");
-				$('main header h3').html("Fall into Fall!");
-				break;
-				
-				case 'winter':
-				$('#logo').attr("src","images/winter.gif");
-				$('#wear').attr("src","images/winter-wear.jpg");
-				$('main header h3').html("Keep warm this Winter!");
-				break;
-				
-				default:
-				$('#logo').attr("src","images/four-seasons.gif");
-				$('#wear').attr("src","images/300x400.png");
-				$('main header h3').html("Outfitter for all seasons!");
-				
-			}
-			
-			var season = "css/" + season + ".css";
-			$(stylesheet).attr("href",season);
-			//alert(season);
-		});
-	});
-    </script>
-	
+	<script>
+
+		function coffeeTemplate(coffee){
+			let myReturn =`<p>
+    			 <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/> <strong>${coffee.day}'s Coffee Special:</strong>${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>`;
+			return myReturn;
+		}
+
+
+
+
+		let coffee = "";
+
+		let myDate = new Date ();
+
+		let today = myDate.getDay();
+
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+
+
+		if(urlParams.has('day')){
+			today = urlParams.get('day');
+			today = parseInt(today);
+		}
+
+
+
+		console.log(today);
+
+		//TEST ONLY - REMOVE LINE BELOW
+		//today = 4;
+		//alert(today);
+
+	switch(today){
+		
+		case 0:
+			coffee = {
+				name: "Bubble Tea",
+				pic: "largebucks-coffee-10072015/images/bubble-tea.jpg",
+				alt: "Bubble Tea Drink",
+				color: "tan",
+				day: "Sunday",
+				desc: `Boba, my favorite!`
+			};
+		break;
+
+		case 1:
+			coffee = {
+				name: "Caramel Latte",
+				pic: "largebucks-coffee-10072015/images/caramel-latte.jpg",
+				alt: "Caramel Latte",
+				color: "purple",
+				day: "Monday",
+				desc: `Better latte than never`
+			};
+		break;
+
+		case 2:
+			coffee = {
+				name: "Drip",
+				pic: "largebucks-coffee-10072015/images/drip.jpg",
+				alt: "Drip Coffee",
+				color: "brown",
+				day: "Tuesday",
+				desc: `I just need the drip!`
+			};
+		break;
+
+		case 3:
+			coffee = {
+				name: "Cold Brew",
+				pic: "largebucks-coffee-10072015/images/cold-brew.jpg",
+				alt: "Cold Brew Coffee",
+				color: "blue",
+				day: "Wednesday",
+				desc: `It seems like it's deja brew`
+			};
+		break;
+
+		case 4:
+			coffee = {
+				name: "Pumpkin Spice Latte",
+				pic: "largebucks-coffee-10072015/images/pumpkin-spice-latte.jpg",
+				alt: "Pumpkin Spice Latte",
+				color: "coral",
+				day: "Thursday",
+				desc: `Pumpkin spice and everything nice`
+			};
+		break;
+
+		case 5:
+			coffee = {
+				name: "Mocha",
+				pic: "largebucks-coffee-10072015/images/mocha.jpg",
+				alt: "Mocha Coffee",
+				color: "gray",
+				day: "Friday",
+				desc: `You mocha me so happy!`
+			};
+		break;
+
+		case 6:
+			coffee = {
+				name: "Frappaccino",
+				pic: "largebucks-coffee-10072015/images/frappaccino.jpg",
+				alt: "Frappuccino Drink",
+				color: "green",
+				day: "Saturday",
+				desc: `A day without coffee? How about frappucci-NO!`
+			};
+		break;
+
+
+	}
+
+	document.getElementById('mydiv').innerHTML = coffeeTemplate(coffee);
+	document.querySelector('.feature').style.color = coffee.color;
+	document.querySelector('html').style.backgroundColor = style.color;
+
+	console.log(coffee);
+
+
+
+	</script>
 </body>
 </html>
